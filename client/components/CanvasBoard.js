@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../redux/actions/actions';
-import Palette from './Palette';
 
 const mapStateToProps = store => {
   return {
@@ -102,7 +101,6 @@ class CanvasBoard extends Component {
     return(
       <div id='canvasDiv'>
         {canvas}
-       <Palette />
       </div>
     );
   }
